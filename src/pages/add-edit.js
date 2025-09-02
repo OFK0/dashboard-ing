@@ -47,7 +47,7 @@ export class AddEdit extends LitElement {
         border: 1px solid #ccc;
         border-radius: 4px;
         padding: 8px 16px;
-        height: 35px;
+        height: 36px;
         font-size: 14px;
         color: #333;
         background-color: #fff;
@@ -70,6 +70,10 @@ export class AddEdit extends LitElement {
         background-position: right 10px center;
         background-size: 20px;
         cursor: pointer;
+      }
+
+      input::-webkit-datetime-edit {
+        padding: 0;
       }
     }
 
