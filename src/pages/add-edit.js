@@ -47,6 +47,7 @@ export class AddEdit extends LitElement {
         border: 1px solid #ccc;
         border-radius: 4px;
         padding: 8px 16px;
+        height: 35px;
         font-size: 14px;
         color: #333;
         background-color: #fff;
@@ -177,6 +178,7 @@ export class AddEdit extends LitElement {
     const foundData = store.getState().findEmployeeById(Number(this.location.params.id));
 
     if (!foundData) {
+      window.location.href = '/';
       return;
     }
 
