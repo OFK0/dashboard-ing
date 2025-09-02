@@ -1,0 +1,12 @@
+# Prettier'dan hariç tutulacak dosyalar
+node_modules
+dist
+build
+coverage
+
+# Belirli dosya türleri
+*.min.js
+*.min.css
+
+# Belirli dosyalar (gerekirse ekleyebilirsiniz)
+src/pages/add-edit.js

@@ -1,0 +1,38 @@
+{
+  "name": "ing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "localize:extract": "lit-localize extract",
+    "localize:build": "lit-localize build",
+    "test": "web-test-runner --coverage",
+    "test:dev": "web-test-runner --coverage --dev",
+    "test:component": "npm run test -- --group",
+    "test:watch": "web-test-runner --coverage --watch",
+    "test:debug": "web-test-runner --coverage --watch --debug",
+    "test:headless": "web-test-runner --coverage --watch --debug --headless"
+  },
+  "dependencies": {
+    "@lit/localize": "^0.12.2",
+    "@vaadin/router": "^2.0.0",
+    "dayjs": "^1.11.18",
+    "lit": "^3.3.1",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@lit/localize-tools": "^0.8.0",
+    "@open-wc/testing": "^4.0.0",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@web/dev-server-esbuild": "^1.0.4",
+    "@web/dev-server-rollup": "^0.6.4",
+    "@web/test-runner": "^0.20.2",
+    "@web/test-runner-playwright": "^0.11.1",
+    "@web/test-runner-puppeteer": "^0.18.0",
+    "minimist": "^1.2.8",
+    "vite": "^7.1.2"
+  }
+}
